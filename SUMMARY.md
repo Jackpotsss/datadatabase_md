@@ -9,7 +9,7 @@
 * [7. 事务（Transaction）](./target/7. 事务（Transaction）.md)
 * [8. 数据库锁（Lock）](./target/8. 数据库锁（Lock）.md)
 * [9. 日志（Log）](./target/9. 日志（Log）.md)
-* [10. 服务高可用 (high availability)](./target/10. 服务高可用 (high availability).md)
+* [10. 服务高可用（high availability）](./target/10. 服务高可用（high availability）.md)
 * [11. 备份与恢复](./target/11. 备份与恢复.md)
 * [12. 客户端连接与连接池](./target/12. 客户端连接与连接池.md)
 * [13. 数据库服务器状态](./target/13. 数据库服务器状态.md)
