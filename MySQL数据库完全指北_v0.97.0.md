@@ -4615,23 +4615,23 @@ mysql> show global VARIABLES like '%innodb_page_size%';
 
 版权声明：
 
-​	**自由转载-保持署名-可修改-非商业 （知识共享3.0许可证）**
+​	本文遵循**[知识共享许可协议3.0（CC 协议）](https://creativecommons.net.cn/licenses/meet-the-licenses/)**： [署名-非商业性使用-相同方式共享 (by-nc-sa)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 
 
 作者：
 
 ​	米开
 
-微信公众号：《米开的网络私房菜》
+微信公众号：**米开的网络私房菜** 
 
 <img src="https://gitee.com/Jackpotsss/pic_go/raw/master/img/QRcode.png" alt="image-20200715095229689"  />
 
 参考：
 
-   《高性能Mysql》
+   《高性能Mysql》第三版
 
    《阿里巴巴Java开发手册》 Mysql规约部分
 
-​	[MySQL官方文档](https://dev.mysql.com/doc)
+​	[MySQL官方文档](https://dev.mysql.com/doc) 
 
 ​	微信公众号: <SQL数据库开发>
 
