@@ -1,0 +1,714 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>14. 数据库运维 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="15. 事件（Event）.html" />
+    
+    
+    <link rel="prev" href="13. 数据库服务器状态.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1. MySQL.html">
+            
+                <a href="1. MySQL.html">
+            
+                    
+                    1. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2. SQL 语言.html">
+            
+                <a href="2. SQL 语言.html">
+            
+                    
+                    2. SQL 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3. 数据类型（Data Type）.html">
+            
+                <a href="3. 数据类型（Data Type）.html">
+            
+                    
+                    3. 数据类型（Data Type）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4. 函数（Function）.html">
+            
+                <a href="4. 函数（Function）.html">
+            
+                    
+                    4. 函数（Function）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5. 视图（View）.html">
+            
+                <a href="5. 视图（View）.html">
+            
+                    
+                    5. 视图（View）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6. 索引（Index）.html">
+            
+                <a href="6. 索引（Index）.html">
+            
+                    
+                    6. 索引（Index）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7. 事务（Transaction）.html">
+            
+                <a href="7. 事务（Transaction）.html">
+            
+                    
+                    7. 事务（Transaction）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8. 数据库锁（Lock）.html">
+            
+                <a href="8. 数据库锁（Lock）.html">
+            
+                    
+                    8. 数据库锁（Lock）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9. 日志（Log）.html">
+            
+                <a href="9. 日志（Log）.html">
+            
+                    
+                    9. 日志（Log）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10. 服务高可用（high availability）.html">
+            
+                <a href="10. 服务高可用（high availability）.html">
+            
+                    
+                    10. 服务高可用（high availability）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11. 备份与恢复.html">
+            
+                <a href="11. 备份与恢复.html">
+            
+                    
+                    11. 备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12. 客户端连接与连接池.html">
+            
+                <a href="12. 客户端连接与连接池.html">
+            
+                    
+                    12. 客户端连接与连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13. 数据库服务器状态.html">
+            
+                <a href="13. 数据库服务器状态.html">
+            
+                    
+                    13. 数据库服务器状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="14. 数据库运维.html">
+            
+                <a href="14. 数据库运维.html">
+            
+                    
+                    14. 数据库运维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15. 事件（Event）.html">
+            
+                <a href="15. 事件（Event）.html">
+            
+                    
+                    15. 事件（Event）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16. 触发器（Trigger）.html">
+            
+                <a href="16. 触发器（Trigger）.html">
+            
+                    
+                    16. 触发器（Trigger）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17. 存储过程（Procedure）.html">
+            
+                <a href="17. 存储过程（Procedure）.html">
+            
+                    
+                    17. 存储过程（Procedure）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18. 其他.html">
+            
+                <a href="18. 其他.html">
+            
+                    
+                    18. 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="README.md">
+            
+                <span>
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="READ-ME.html">
+            
+                <a href="READ-ME.html">
+            
+                    
+                    READ-ME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >14. 数据库运维</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="14-&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x7EF4;">14. &#x6570;&#x636E;&#x5E93;&#x8FD0;&#x7EF4;</h1>
+<h2 id="&#x7528;&#x6237;&#x7BA1;&#x7406;">&#x7528;&#x6237;&#x7BA1;&#x7406;</h2>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;&#x6240;&#x6709;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;
+select * from mysql.user
+# &#x521B;&#x5EFA;&#x7528;&#x6237;
+CREATE USER &apos;user_name&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;password&apos;;
+</code></pre>
+<p>&#x7528;&#x6237;&#x7684;&#x8868;&#x8FBE;&#x8BED;&#x6CD5;&#xFF1A;user_name@host_name </p>
+<h2 id="&#x6743;&#x9650;&#x7BA1;&#x7406;">&#x6743;&#x9650;&#x7BA1;&#x7406;</h2>
+<p>&#x200B;    Mysql &#x7684;&#x6BCF;&#x79CD;&#x64CD;&#x4F5C;&#x90FD;&#x4EE3;&#x8868;&#x4E00;&#x79CD;&#x6743;&#x9650;&#xFF08;privilege&#xFF09;&#xFF0C;&#x6388;&#x6743;&#xFF08;grant&#xFF09;&#x7ED9;&#x76F8;&#x5E94;&#x7684;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>SHOW PRIVILEGES</code> &#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#x7684;&#x6743;&#x9650;&#x7C7B;&#x578B;:</p>
+<pre><code class="lang-mysql">mysql&gt; SHOW PRIVILEGES;
++-------------------------+----------------------------------+------------------------------------+
+| Privilege               | Context                          | Comment                               
++-------------------------+----------------------------------+------------------------------------+
+| Alter                   | Tables                           | To alter the table                      
+| Alter routine           | Functions,Procedures             | To alter or drop stored functions/procedures 
+| Create                  | Databases,Tables,Indexes         | To create new databases and tables
+| Create routine          | Databases                        | To use CREATE FUNCTION/PROCEDURE
+| Create temporary tables | Databases                        | To use CREATE TEMPORARY TABLE
+| Create view             | Tables                           | To create new views
+| Create user             | Server Admin                     | To create new users
+| Delete                  | Tables                           | To delete existing rows
+| Drop                    | Databases,Tables                 | To drop databases, tables, and views
+ ......
+</code></pre>
+<p>&#x6CE8;&#xFF1A;mysql5.6 &#x652F;&#x6301;30 &#x591A;&#x79CD;&#x6743;&#x9650;&#x7C7B;&#x578B;&#xFF1B;</p>
+<p>&#x6839;&#x636E;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x53EF;&#x5206;&#x4E3A; &#x6570;&#x636E;&#x5E93;&#x3001;&#x6570;&#x636E;&#x8868;&#x3001;&#x7D22;&#x5F15;&#x3001;&#x51FD;&#x6570;&#x3001;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x3001;&#x670D;&#x52A1;&#x5668; &#x7B49;&#x51E0;&#x79CD;&#xFF1B;</p>
+<p>Mysql &#x7684;&#x6388;&#x6743;&#x7528;&#x6237;&#x7531;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A;&#x767B;&#x5F55;&#x4E3B;&#x673A;&#x540D;&#x548C;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<h3 id="&#x67E5;&#x770B;&#x7528;&#x6237;&#x53CA;&#x6743;&#x9650;">&#x67E5;&#x770B;&#x7528;&#x6237;&#x53CA;&#x6743;&#x9650;</h3>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;&#x6240;&#x7528;&#x7528;&#x6237;-&#x6743;&#x9650;&#x4FE1;&#x606F;
+select * from mysql.user
+# &#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x6388;&#x6743;&#x4FE1;&#x606F;
+show grants for &apos;jackpot&apos;@&apos;localhost&apos;;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x6743;&#x9650;</th>
+<th>&#x4F5C;&#x7528;&#x57DF;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>create</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>drop</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>alter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>show view</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>create view</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>insert</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>delete</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>update</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>select</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>index</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>trigger</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>grant option</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>reference</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>skip-grant-tables</p>
+<p>The MySQL server is running with the --skip-grant-tables option so it cannot execute this statement</p>
+<h3 id="&#x6388;&#x4E88;&#x6743;&#x9650;">&#x6388;&#x4E88;&#x6743;&#x9650;</h3>
+<p>grant &#x5173;&#x952E;&#x5B57;&#x7528;&#x4E8E;&#x7ED9;&#x7528;&#x6237;&#x6388;&#x6743;.</p>
+<pre><code class="lang-mysql"># &#x7ED9;&#x7528;&#x6237;&#x6388;&#x6743;
+GRANT ALL PRIVILEGES ON *.* TO &apos;jackpot&apos;@&apos;localhost&apos; IDENTIFIED BY PASSWORD &apos;*6AE236078C8F42F6FDA2C35E08941CC6D17204D7&apos;
+WITH GRANT OPTION
+</code></pre>
+<p> <code>ON *.*</code>  &#x8868;&#x793A;&#x6743;&#x9650;&#x4F5C;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6240;&#x6709;&#x8868;;</p>
+<p><code>TO user@host</code> &#x6743;&#x9650;&#x6388;&#x6743;&#x7ED9;&#x6307;&#x5B9A;&#x7528;&#x6237;;</p>
+<p><code>WITH GRANT OPTION</code> &#x662F;&#x56FA;&#x5B9A;&#x8BED;&#x6CD5;;</p>
+<p>&#x6CE8;:</p>
+<p>&#x200B;    &#x5728;&#x6388;&#x6743;&#x65F6;&#x586B;&#x5199;&#x7684; password &#x5B57;&#x7B26;&#x683C;&#x5F0F;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5BC6;&#x6587;&#x683C;&#x5F0F;&#xFF0C;&#x4E0D;&#x80FD;&#x662F;&#x660E;&#x6587;&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x9519;&#xFF1B;&#x53EF;&#x4EE5;&#x9884;&#x5148;&#x4F7F;&#x7528; password&#xFF08;&#xFF09;&#x51FD;&#x6570;&#x5C06;&#x5BC6;&#x7801;&#x5904;&#x7406;&#x540E;&#x518D;&#x586B;&#x5199;&#x3002;</p>
+<pre><code class="lang-mysql">select PASSWORD(&apos;www2020&apos;);
+</code></pre>
+<h3 id="&#x56DE;&#x6536;&#x6743;&#x9650;">&#x56DE;&#x6536;&#x6743;&#x9650;</h3>
+<p>revoke &#x5173;&#x952E;&#x5B57;&#x7528;&#x4E8E;&#x7ED9;&#x7528;&#x6237;&#x56DE;&#x6536;&#x6743;&#x9650;.</p>
+<pre><code class="lang-mysql">revoke
+</code></pre>
+<p>&#x5237;&#x65B0;&#x6743;&#x9650;&#xFF1A;</p>
+<pre><code class="lang-mysql">FLUSH PRIVILEGES;
+</code></pre>
+<h2 id="&#x7BA1;&#x7406;mysql&#x547D;&#x4EE4;">&#x7BA1;&#x7406;MySQL&#x547D;&#x4EE4;</h2>
+<p>&#x6570;&#x636E;&#x5E93;</p>
+<pre><code class="lang-mysql">show databases;        -- &#x5217;&#x51FA;MySQL&#x670D;&#x52A1;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x5217;&#x8868;;
+use database_name;    -- &#x9009;&#x62E9;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x5E93;,&#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x540E;&#x6240;&#x6709;&#x7684;mysql&#x547D;&#x4EE4;&#x90FD;&#x53EA;&#x9488;&#x5BF9;&#x8BE5;&#x6570;&#x636E;&#x5E93;;
+show tables;        -- &#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6240;&#x6709;&#x8868;;
+</code></pre>
+<p>&#x6570;&#x636E;&#x8868;</p>
+<pre><code class="lang-mysql">DESC table_name;                -- &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;:&#x5B57;&#x6BB5;&#x540D;,&#x7C7B;&#x578B;,&#x9ED8;&#x8BA4;&#x503C;,&#x662F;&#x5426;&#x975E;&#x7A7A;&#x7EA6;&#x675F;
+DESCRIBE table_name;            -- &#x540C;&#x4E0A;&#xFF1B;
+SHOW COLUMNS FROM table_name;    -- &#x540C;&#x4E0A;&#xFF1B;
+
+show table status like &apos;BMS_MD_GOODS&apos;;    -- &#x67E5;&#x770B;&#x8868;&#x72B6;&#x6001;: &#x5B58;&#x50A8;&#x5F15;&#x64CE;,&#x7D22;&#x5F15;,&#x6570;&#x636E;&#x788E;&#x7247;,&#x5B57;&#x7B26;&#x96C6;,&#x521B;&#x5EFA;&#x65F6;&#x95F4;...
+SHOW INDEX FROM table_name;                -- &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x8868;&#x7684;&#x7D22;&#x5F15;&#x4FE1;&#x606F;
+</code></pre>
+<p>&#x5B9E;&#x7528;SQL:</p>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x5217;&#x8868;
+SHOW PROCESSLIST;
+
+# &#x663E;&#x793A;innodb&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x72B6;&#x6001;&#x7684;&#x5927;&#x91CF;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x542B;&#x6B7B;&#x9501;&#x65E5;&#x5FD7;
+SHOW ENGINE INNODB STATUS ;
+# &#x5C55;&#x793A;&#x6570;&#x636E;&#x5E93;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;&#x7684;&#x914D;&#x7F6E;
+SHOW VARIABLES LIKE &apos;max_connections&apos;;
+# &#x67E5;&#x770B;&#x5B58;&#x5728;&#x54EA;&#x4E9B;&#x89E6;&#x53D1;&#x5668;
+SELECT * FROM information_schema.TRIGGERS;
+# &#x67E5;&#x770B;MySQL&#x7248;&#x672C;
+SELECT VERSION();
+</code></pre>
+<h2 id="&#x76D1;&#x63A7;mysql&#x670D;&#x52A1;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;">&#x76D1;&#x63A7;MySQL&#x670D;&#x52A1;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;</h2>
+<p>&#x200B;    &#x6709;&#x4E00;&#x6B21;&#x67D0;&#x4E2A;&#x670D;&#x52A1;&#x7A81;&#x7136;&#x6302;&#x4E86;&#xFF0C;&#x539F;&#x56E0;&#x4E0D;&#x8BE6;&#xFF0C;&#x91CD;&#x542F;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x4E00;&#x76F4;&#x5904;&#x4E8E;&#x542F;&#x52A8;&#x4E2D;&#xFF0C;</p>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;mysql&#x5DE5;&#x4F5C;&#x5904;&#x7406;&#x5217;&#x8868; (&#x76EE;&#x524D;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x7684;&#x60C5;&#x51B5;)
+show PROCESSLIST;
+# &#x7B49;&#x540C;&#x4E8E;&#x4E0A;&#x9762;
+select * from information_schema.processlist;
+# &#x67E5;&#x770B;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7EBF;&#x7A0B;
+select * from performance_schema.threads;
+# &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7684;&#x8FDE;&#x63A5;ID
+select CONNECTION_ID();
+</code></pre>
+<h2 id="&#x8C03;&#x6574;&#x63A5;&#x6536;&#x6700;&#x5927;&#x7F51;&#x7EDC;&#x5305;&#x7684;&#x5927;&#x5C0F;">&#x8C03;&#x6574;&#x63A5;&#x6536;&#x6700;&#x5927;&#x7F51;&#x7EDC;&#x5305;&#x7684;&#x5927;&#x5C0F;</h2>
+<p><strong>max_allowed_packet</strong> &#x5141;&#x8BB8;&#x6700;&#x5927;&#x7684;&#x7F51;&#x7EDC;&#x5305;&#x5927;&#x5C0F;</p>
+<pre><code class="lang-mysql">mysql&gt; show variables like &apos;%max_allowed_packet%&apos;;
++--------------------------+------------+
+| Variable_name            | Value      |
++--------------------------+------------+
+| max_allowed_packet       | 4194304    |
+| slave_max_allowed_packet | 1073741824 |
++--------------------------+------------+
+</code></pre>
+<p>&#x5982;&#x679C;&#x5199;&#x5165;&#x7684;&#x503C;&#x5927;&#x5C0F;&#x8D85;&#x8FC7;mysql&#x8FD0;&#x884C;&#x7684;&#x6700;&#x5927;&#x7F51;&#x7EDC;&#x5305;&#x5927;&#x5C0F;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code class="lang-mysql">Packet for query is too large (14004196 &gt; 11999232). You can change this value on the server by setting the max_allowed_packet&apos; variable.
+</code></pre>
+<p>&#x6B64;&#x65F6;&#x9700;&#x8981;&#x9002;&#x5F53;&#x8C03;&#x5927; <code>max_allowed_packet</code> &#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="&#x52A0;&#x9501;--&#x89E3;&#x9501;&#x6570;&#x636E;&#x5E93;">&#x52A0;&#x9501; | &#x89E3;&#x9501;&#x6570;&#x636E;&#x5E93;</h2>
+<p>&#x52A0;&#x9501;&#x548C;&#x89E3;&#x9501;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x5E38;&#x5728;&#x5907;&#x4EFD;&#x6570;&#x636E;&#x5E93;&#x65F6;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x624B;&#x52A8;&#x9501;&#x6570;&#x636E;&#x5E93;:</p>
+<pre><code class="lang-mysql"># &#x5207;&#x6362;&#x6570;&#x636E;&#x5E93;;
+use db1;
+# &#x7ED9;db1&#x6570;&#x636E;&#x5E93;&#x52A0;&#x8BFB;&#x9501;,&#x6240;&#x6709;&#x8868;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#x5168;&#x90E8;&#x963B;&#x585E;;
+flush tables with read lock;        
+# &#x89E3;&#x9501;;
+unlock tables;
+</code></pre>
+<p>&#x624B;&#x52A8;&#x9501;&#x8868;:</p>
+<pre><code class="lang-mysql">LOCK TABLES `student` read ;    # &#x7ED9;&#x67D0;&#x4E2A;&#x8868;&#x52A0; &#x8BFB;&#x9501;: &#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x5141;&#x8BB8;&#x8BFB;,&#x4E0D;&#x5141;&#x8BB8;&#x5199;;
+LOCK TABLES `student` write ;    # &#x7ED9;&#x67D0;&#x4E2A;&#x8868;&#x52A0; &#x5199;&#x9501;: &#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#x7684;&#x8BFB;&#x548C;&#x5199;&#x90FD;&#x4E0D;&#x5141;&#x8BB8;;
+# &#x89E3;&#x9501;;
+UNLOCK TABLES;
+</code></pre>
+<h2 id="&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;">&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;</h2>
+<pre><code class="lang-mysql"># 
+select * from goods
+INTO OUTFILE &quot;/var/lib/mysql-files/goods.sql&quot;
+</code></pre>
+<p>&#x5982;&#x679C;&#x5BFC;&#x51FA;&#x5931;&#x8D25;,&#x67E5;&#x770B;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;,&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x8F93;&#x51FA;&#x76EE;&#x5F55;&#x6709;&#x9650;&#x5236;.</p>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;mysql&#x670D;&#x52A1;&#x5BFC;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x9650;&#x5236;&#x76EE;&#x5F55; &#xFF1A;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; /var/lib/mysql-files/
+SHOW VARIABLES LIKE &quot;%secure_file_priv%&quot;;
+</code></pre>
+<p>secure_file_priv &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6709;3&#x7C7B;&#x503C;&#xFF1A;</p>
+<ul>
+<li>null &#x8868;&#x793A;&#x4E0D;&#x5141;&#x8BB8;mysql&#x670D;&#x52A1;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF1B;</li>
+<li>&#x7A7A;&#x503C;&#x8868;&#x793A;&#x4E0D;&#x9650;&#x5236;mysql&#x670D;&#x52A1;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#xFF1B;&#xFF08;&#x6CE8;&#x610F;&#x7B49;&#x53F7; = &#x4E0D;&#x80FD;&#x7701;&#x7565;&#xFF09;</li>
+<li>/home &#x8868;&#x793A;&#x9650;&#x5236;mysql&#x670D;&#x52A1;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x53EA;&#x80FD;&#x662F; /home &#xFF1B;</li>
+</ul>
+<p>secure_file_priv &#x662F;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7; set &#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#xFF0C;&#x53EA;&#x80FD;&#x5728;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#xFF0C;&#x5E76;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x624D;&#x80FD;&#x751F;&#x6548;&#x3002;</p>
+<h2 id="percona-toolkit">Percona ToolKit</h2>
+<p>Percona ToolKit &#x662F; Percona &#x516C;&#x53F8;&#x5F00;&#x53D1;&#x7684;&#x7BA1;&#x7406;MySQL&#x7684;&#x9AD8;&#x7EA7;<strong>&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x96C6;</strong>&#xFF0C;&#x5F00;&#x6E90;&#x514D;&#x8D39;&#x3002;</p>
+<h2 id="&#x91CA;&#x653E;&#x5220;&#x9664;&#x7A7A;&#x95F4;">&#x91CA;&#x653E;&#x5220;&#x9664;&#x7A7A;&#x95F4;</h2>
+<p>&#x573A;&#x666F;&#xFF1A;</p>
+<p>&#x200B;    &#x5220;&#x9664;&#x8868;&#x6570;&#x636E;&#xFF0C;delete&#x5B8C;&#x4EE5;&#x540E;&#xFF0C;&#x8868;&#x7A7A;&#x95F4;&#x6587;&#x4EF6;&#x5E76;&#x4E0D;&#x4F1A;&#x51CF;&#x5C11;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x788E;&#x7247;&#x7A7A;&#x95F4;&#x7684;&#x5B58;&#x5728;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>optimize table</code>  &#x5BF9;&#x8868;&#x505A;&#x788E;&#x7247;&#x6574;&#x7406;&#x6765;&#x91CA;&#x653E;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">optimize</span> <span class="hljs-keyword">table</span> BMS_MD_GOODS;
+</code></pre>
+<p>&#x6CE8;&#x610F;:</p>
+<p>&#x200B;    <code>optimize</code> &#x547D;&#x4EE4;&#x4F1A;&#x8FDB;&#x884C;<strong>&#x9501;&#x8868;&#x64CD;&#x4F5C;</strong>&#xFF01;&#x7981;&#x6B62;&#x539F;&#x8868;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x8BFB;&#x3002;&#x6240;&#x4EE5;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x8981;&#x907F;&#x5F00;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x65F6;&#x95F4;&#xFF0C;&#x907F;&#x514D;&#x4E8B;&#x6545;&#x53D1;&#x751F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="13. 数据库服务器状态.html" class="navigation navigation-prev " aria-label="Previous page: 13. 数据库服务器状态">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="15. 事件（Event）.html" class="navigation navigation-next " aria-label="Next page: 15. 事件（Event）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"14. 数据库运维","level":"1.15","depth":1,"next":{"title":"15. 事件（Event）","level":"1.16","depth":1,"path":"target/15. 事件（Event）.md","ref":"./target/15. 事件（Event）.md","articles":[]},"previous":{"title":"13. 数据库服务器状态","level":"1.14","depth":1,"path":"target/13. 数据库服务器状态.md","ref":"./target/13. 数据库服务器状态.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"target/14. 数据库运维.md","mtime":"2020-12-20T14:06:23.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-22T14:10:08.794Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

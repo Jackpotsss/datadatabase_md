@@ -1,0 +1,693 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. 函数（Function） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5. 视图（View）.html" />
+    
+    
+    <link rel="prev" href="3. 数据类型（Data Type）.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1. MySQL.html">
+            
+                <a href="1. MySQL.html">
+            
+                    
+                    1. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2. SQL 语言.html">
+            
+                <a href="2. SQL 语言.html">
+            
+                    
+                    2. SQL 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3. 数据类型（Data Type）.html">
+            
+                <a href="3. 数据类型（Data Type）.html">
+            
+                    
+                    3. 数据类型（Data Type）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="4. 函数（Function）.html">
+            
+                <a href="4. 函数（Function）.html">
+            
+                    
+                    4. 函数（Function）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5. 视图（View）.html">
+            
+                <a href="5. 视图（View）.html">
+            
+                    
+                    5. 视图（View）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6. 索引（Index）.html">
+            
+                <a href="6. 索引（Index）.html">
+            
+                    
+                    6. 索引（Index）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7. 事务（Transaction）.html">
+            
+                <a href="7. 事务（Transaction）.html">
+            
+                    
+                    7. 事务（Transaction）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8. 数据库锁（Lock）.html">
+            
+                <a href="8. 数据库锁（Lock）.html">
+            
+                    
+                    8. 数据库锁（Lock）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9. 日志（Log）.html">
+            
+                <a href="9. 日志（Log）.html">
+            
+                    
+                    9. 日志（Log）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10. 服务高可用（high availability）.html">
+            
+                <a href="10. 服务高可用（high availability）.html">
+            
+                    
+                    10. 服务高可用（high availability）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11. 备份与恢复.html">
+            
+                <a href="11. 备份与恢复.html">
+            
+                    
+                    11. 备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12. 客户端连接与连接池.html">
+            
+                <a href="12. 客户端连接与连接池.html">
+            
+                    
+                    12. 客户端连接与连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13. 数据库服务器状态.html">
+            
+                <a href="13. 数据库服务器状态.html">
+            
+                    
+                    13. 数据库服务器状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14. 数据库运维.html">
+            
+                <a href="14. 数据库运维.html">
+            
+                    
+                    14. 数据库运维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15. 事件（Event）.html">
+            
+                <a href="15. 事件（Event）.html">
+            
+                    
+                    15. 事件（Event）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16. 触发器（Trigger）.html">
+            
+                <a href="16. 触发器（Trigger）.html">
+            
+                    
+                    16. 触发器（Trigger）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17. 存储过程（Procedure）.html">
+            
+                <a href="17. 存储过程（Procedure）.html">
+            
+                    
+                    17. 存储过程（Procedure）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18. 其他.html">
+            
+                <a href="18. 其他.html">
+            
+                    
+                    18. 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="README.md">
+            
+                <span>
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="READ-ME.html">
+            
+                <a href="READ-ME.html">
+            
+                    
+                    READ-ME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. 函数（Function）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="4-&#x51FD;&#x6570;&#xFF08;function&#xFF09;">4. &#x51FD;&#x6570;&#xFF08;Function&#xFF09;</h1>
+<h2 id="41-&#x5185;&#x7F6E;&#x51FD;&#x6570;">4.1 &#x5185;&#x7F6E;&#x51FD;&#x6570;</h2>
+<p>MySQL &#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x5185;&#x7F6E;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="&#x6570;&#x5B66;&#x51FD;&#x6570;">&#x6570;&#x5B66;&#x51FD;&#x6570;</h3>
+<pre><code class="lang-mysql">ROUND(1234567.895,2)        # &#x56DB;&#x820D;&#x4E94;&#x5165;; 1234567.90
+TRUNCATE(1234567.895,2)        # &#x5C06;&#x5C0F;&#x6570;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x540E;&#x9762;&#x7684;&#x503C;&#x76F4;&#x63A5;&#x62B9;&#x53BB;;    1234567.89
+FORMAT(1234567.895,2)        # &#x683C;&#x5F0F;&#x5316;&#x6570;&#x5B57;&#xFF0C;&#x6574;&#x6570;&#x90E8;&#x5206;&#x4ECE;&#x4F4E;&#x5230;&#x9AD8;&#x6BCF;3&#x4F4D;&#x6309;&#x9017;&#x53F7;&#x5206;&#x9694;&#xFF0C;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#x4FDD;&#x7559;&#x5E76;&#x56DB;&#x820D;&#x4E94;&#x5165;: 1,234,567.90
+ABS(x)                        # &#x8BA1;&#x7B97;&#x7EDD;&#x5BF9;&#x503C;
+HEX(x)                        # &#x8F6C;&#x6362;&#x4E3A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5E76;&#x8FD4;&#x56DE;
+BIN(x)                        # &#x5C06;&#x6570;&#x5B57;&#x8F6C;&#x6362;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x5E76;&#x8FD4;&#x56DE;
+</code></pre>
+<p>&#x805A;&#x5408;&#x51FD;&#x6570;:</p>
+<pre><code class="lang-mysql">COUNT(*)            # &#x7EDF;&#x8BA1;&#x8868;&#x7684;&#x6570;&#x636E;&#x884C;&#x6570;
+MIN(col)            # &#x8BA1;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#x6700;&#x5C0F;&#x503C;
+MAX(col)            # &#x8BA1;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#x6700;&#x5927;&#x503C;
+AVG(col)            # &#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x503C;
+SUM(col)            # &#x6C42;&#x548C;
+GROUP_CONCAT(col)    # &#x5C06;&#x5C5E;&#x4E8E;&#x4E00;&#x7EC4;&#x7684;&#x5217;&#x503C;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;
+</code></pre>
+<p>&#x6CE8;:    </p>
+<ul>
+<li>count(col) &#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x975E;&#x7A7A;&#x5217;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#xFF1B;</li>
+<li>count(*) &#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x8BE5;&#x8868;&#x6240;&#x6709;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#xFF1B;</li>
+<li>count(distinct col) &#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x975E;&#x7A7A;&#x4E14;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x8BB0;&#x5F55;&#x6570; &#xFF1B;</li>
+</ul>
+<h3 id="&#x65E5;&#x671F;&#x51FD;&#x6570;">&#x65E5;&#x671F;&#x51FD;&#x6570;</h3>
+<p>&#x5E38;&#x7528;&#x65E5;&#x671F;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-mysql">NOW();                    # &#x5F53;&#x524D;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x503C;
+CURDATE();                # &#x5F53;&#x524D;&#x65E5;&#x671F;&#x503C;
+DATE(d);                # &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x7684;&#x65E5;&#x671F;&#x90E8;&#x5206;
+
+DATE_FORMAT(NOW(),&apos;%Y-%m-%d %T&apos;);                    # &#x65E5;&#x671F;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;
+STR_TO_DATE(&apos;2018-08-08 08:00:00&apos;,&apos;%Y-%m-%d %T&apos;)     # &#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x65E5;&#x671F;
+
+ADDDATE(NOW(),2);        # &#x52A0;&#x4E0A;n&#x5929;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x503C;
+SUBDATE(NOW(),2);        # &#x51CF;&#x53BB;n&#x5929;&#x7684;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x503C;
+DATEDIFF(d1,d2);        # &#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x5DEE;&#x503C;: d1-d2
+
+DAYOFYEAR(d);            # &#x8BA1;&#x7B97;&#x65E5;&#x671F;&#x662F;&#x672C;&#x5E74;&#x7B2C;&#x51E0;&#x5929;
+DAYOFMONTH(d);            # &#x8BA1;&#x7B97;&#x65E5;&#x671F;&#x662F;&#x672C;&#x6708;&#x7B2C;&#x51E0;&#x5929;
+DAYOFWEEK(d);            # &#x8BA1;&#x7B97;&#x65E5;&#x671F;&#x662F;&#x5468;&#x51E0;:1&#x4E3A;&#x5468;&#x65E5;,2&#x4E3A;&#x5468;&#x4E00;...
+</code></pre>
+<h3 id="&#x5B57;&#x7B26;&#x51FD;&#x6570;">&#x5B57;&#x7B26;&#x51FD;&#x6570;</h3>
+<p>&#x5E38;&#x7528;&#x5B57;&#x7B26;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-mysql"># &#x53BB;&#x9664;&#x5B57;&#x7B26;&#x4E32;&#x5DE6;&#x53F3;&#x4E24;&#x4FA7;&#x7684;&#x7A7A;&#x683C;
+TRIM(str)
+# &#x66FF;&#x6362;&#x51FD;&#x6570;,&#x4F7F;&#x7528;s2&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;str&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5B57;&#x7B26;&#x4E32;s1
+REPLACE(str,s1,s2)         
+# &#x83B7;&#x53D6;&#x5B50;&#x5B57;&#x7B26;&#x4E32;,&#x4ECE;str&#x7684;pos&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;,&#x83B7;&#x53D6;len&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x7B26;&#x5E76;&#x8FD4;&#x56DE;
+SUBSTRING(str,pos,len)     
+# &#x8BA1;&#x7B97;&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x7B26;&#x4E2A;&#x6570;&#x5E76;&#x8FD4;&#x56DE;
+CHAR_LENGTH(str)                 
+# &#x8BA1;&#x7B97;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x5E76;&#x8FD4;&#x56DE;
+LENGTH(str)  
+# &#x62FC;&#x63A5;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;,&#x5E76;&#x8FD4;&#x56DE;
+CONCAT(str1,str2, ...)     
+# &#x5339;&#x914D;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;,&#x8FD4;&#x56DE;s1&#x5728;str&#x4E2D;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;
+LOCATE(s1,str)                     
+# &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x8F6C;&#x6362;&#x6210;&#x5C0F;&#x5199;,&#x5E76;&#x8FD4;&#x56DE;
+LCASE(str)                          
+# &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x8F6C;&#x6362;&#x6210;&#x5927;&#x5199;,&#x5E76;&#x8FD4;&#x56DE;
+UCASE(str)                         
+# &#x622A;&#x53D6;&#x5DE6;&#x4FA7;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;,&#x8FD4;&#x56DE;str&#x6700;&#x5DE6;&#x8FB9;len&#x4E2A;&#x5B57;&#x7B26;
+LEFT(str,len)    
+# &#x622A;&#x53D6;&#x53F3;&#x4FA7;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;,&#x8FD4;&#x56DE;str&#x6700;&#x53F3;&#x8FB9;len&#x4E2A;&#x5B57;&#x7B26;
+RIGHT(str,len)
+</code></pre>
+<h3 id="&#x52A0;&#x5BC6;&#x51FD;&#x6570;">&#x52A0;&#x5BC6;&#x51FD;&#x6570;</h3>
+<p>&#x5E38;&#x7528;&#x52A0;&#x5BC6;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-mysql">ENCODE(str,pswd_str);            # &#x4F7F;&#x7528;pswd_str&#x4F5C;&#x4E3A;&#x5BC6;&#x7801;&#xFF0C;&#x52A0;&#x5BC6;str
+DECODE(crypt_str,pswd_str);        # &#x4F7F;&#x7528;pswd_str&#x4F5C;&#x4E3A;&#x5BC6;&#x7801;&#xFF0C;&#x89E3;&#x5BC6;crypt_str(&#x5DF2;&#x52A0;&#x5BC6;&#x5B57;&#x7B26;&#x4E32;)
+MD5(str);                        # MD5&#x6563;&#x5217;&#x51FD;&#x6570;,&#x8BA1;&#x7B97;&#x51FA;128&#x4F4D;&#x6BD4;&#x7279;&#x7ED3;&#x679C;,&#x4EE5;32&#x4F4D;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x8868;&#x793A;
+SHA1(str);                        # SHA1 &#x6563;&#x5217;&#x51FD;&#x6570;,&#x8BA1;&#x7B97;&#x51FA;20&#x4E2A;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x7684;&#x7ED3;&#x679C;,&#x4EE5;40&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x8868;&#x793A;
+</code></pre>
+<h3 id="&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x51FD;&#x6570;">&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x51FD;&#x6570;</h3>
+<p>&#x5E38;&#x7528;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-mysql">IF(expr1,expr2,expr3)    # &#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F; expr1&#x4E3A;&#x771F;,&#x8FD4;&#x56DE;expr2,&#x5426;&#x5219;&#x8FD4;&#x56DE;expr3;
+IFNULL(expr1,expr2)        # &#x5982;&#x679C; expr1 &#x4E0D;&#x4E3A; NULL,&#x8FD4;&#x56DE;expr1,&#x5426;&#x5219;&#x8FD4;&#x56DE;expr1;
+COALESCE (expr, ...)     # &#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x4E0D;&#x4E3A; NULL &#x7684;&#x503C;,&#x5E38;&#x7528;&#x4E8E;&#x5C06; NULL &#x503C;&#x8F6C;&#x5316;&#x4E3A;0;
+
+# &#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;: CASE WHEN
+CASE expression
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result
+END
+</code></pre>
+<p>&#x200B;    CASE &#x8868;&#x793A;&#x51FD;&#x6570;&#x5F00;&#x59CB;&#xFF0C;END &#x8868;&#x793A;&#x51FD;&#x6570;&#x7ED3;&#x675F;&#x3002;&#x5982;&#x679C; condition1 &#x6210;&#x7ACB;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; result1, &#x5982;&#x679C; condition2 &#x6210;&#x7ACB;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; result2&#xFF0C;&#x5F53;&#x5168;&#x90E8;&#x4E0D;&#x6210;&#x7ACB;&#x5219;&#x8FD4;&#x56DE; else &#x7ED3;&#x679C;&#xFF0C;&#x800C;&#x5F53;&#x6709;&#x4E00;&#x4E2A;&#x6210;&#x7ACB;&#x4E4B;&#x540E;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5C31;&#x4E0D;&#x6267;&#x884C;&#x4E86;&#x3002;</p>
+<h3 id="&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x51FD;&#x6570;">&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x51FD;&#x6570;</h3>
+<pre><code class="lang-mysql">DATABASE();            # &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x540D;
+VERSION();            # &#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;&#x53F7;
+USER();                # &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x7528;&#x6237;
+CONNECTION_ID();    # &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x8FDE;&#x63A5;ID
+</code></pre>
+<h2 id="42-&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;">4.2 &#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;</h2>
+<p>MySQL&#x652F;&#x6301;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code class="lang-mysql">create function &#x51FD;&#x6570;&#x540D;(&#x53C2;&#x6570;&#x5217;&#x8868;) 
+    returns &#x6570;&#x636E;&#x7C7B;&#x578B;
+begin
+ sql&#x8BED;&#x53E5;;
+ return &#x6570;&#x636E;;
+end;
+</code></pre>
+<h3 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h3>
+<pre><code class="lang-mysql"># &#x793A;&#x4F8B;1: &#x5165;&#x53C2;&#x662F;int(11)&#x7C7B;&#x578B;,&#x8FD4;&#x56DE;&#x503C;&#x662F;varchar(50)&#x7C7B;&#x578B;
+CREATE DEFINER=`root`@`localhost` FUNCTION `get_stu_name`(id int(11)) RETURNS varchar(50) CHARSET utf8
+BEGIN
+    declare result varchar(50);
+    select s.`name` from student as s where s.id = id into result;
+    RETURN result;
+END
+
+# &#x793A;&#x4F8B;2
+CREATE DEFINER=`root`@`localhost` FUNCTION `dna_collate_gbk`(s varchar(2000)) RETURNS varbinary(4000)
+begin
+    declare i int default 1;
+    declare c varchar(4);
+    declare r varbinary(4000) default binary &apos;&apos;;
+    declare t binary(2);
+    while i &lt;= char_length(s) do
+        set c = substr(s, i, 1);
+        if ascii(c) &lt; 128 then 
+            set r = concat(r, dna_byte2hex(0), dna_byte2hex(ascii(c)));
+        else
+            select sn into t from CORE_COLLATE_GBK where ch = c;
+            set r = concat(r, t);
+        end if;
+        set i = i + 1;
+    end while;                  
+    return r;
+end
+</code></pre>
+<h3 id="&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;">&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;</h3>
+<p>MySQL&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7EC4;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x9650;&#x4E8E;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E0E;&#x8D4B;&#x503C;&#x3001;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x3001;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7B49;&#x3002;</p>
+<p><strong>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E0E;&#x8D4B;&#x503C;</strong> </p>
+<pre><code class="lang-mysql"># &#x58F0;&#x660E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;
+declare c varchar(10);
+# &#x8D4B;&#x503C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;
+set c = concat(r, t);
+# &#x58F0;&#x660E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5E76;&#x8D4B;&#x9ED8;&#x8BA4;&#x503C;
+declare i int default 1;
+# &#x4F7F;&#x7528;into&#x5C06;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF; 
+select s.`name` from student as s where s.id = id into result;
+</code></pre>
+<p><strong>&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;</strong> </p>
+<pre><code class="lang-mysql"># if &#x6761;&#x4EF6;&#x5224;&#x65AD;
+if (val is null) then
+    return &apos;&apos;;
+elseif (val &lt;16) then
+    return concat(&apos;0&apos;, hex(val));
+else
+    return hex(val);
+end if;
+
+# case when &#x5224;&#x65AD; (&#x7528;&#x6CD5;1)
+case var
+    when 0 then
+      insert into t values(17);  
+    when 1 then
+      insert into t values(18);  
+    else
+      insert into t values(19);  
+end case;  
+# case when &#x5224;&#x65AD; (&#x7528;&#x6CD5;2)
+case
+    when var &gt; 0 then
+      insert into t values(17);  
+    when var &lt; 0 then
+      insert into t values(18);  
+    else
+      insert into t values(19);  
+end case;
+</code></pre>
+<p>case when &#x5224;&#x65AD; &#x6709;&#x4E24;&#x79CD;&#x7528;&#x6CD5;&#xFF0C;&#x7528;&#x6CD5;&#x4E00;&#x662F;&#x4EE5;&#x679A;&#x4E3E;&#x7684;&#x5F62;&#x5F0F;&#x5217;&#x51FA;&#x6240;&#x6709;&#x7B49;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x7528;&#x6CD5;&#x4E8C;&#x6CA1;&#x6709;case &#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x66F4;&#x50CF;if&#x5224;&#x65AD;&#x8BED;&#x53E5;&#x3002;</p>
+<p><strong>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</strong> </p>
+<pre><code class="lang-mysql"># while &#x5FAA;&#x73AF;
+while i &lt;= char_length(s) do
+    insert into t values(v);  
+    set i = i+1; 
+end while;
+# loop &#x5FAA;&#x73AF;
+LOOP_LABLE:loop  
+    insert into t values(v);  
+    set v=v+1;  
+    if v &gt;=5 then 
+        leave LOOP_LABLE;  
+    end if;  
+end loop;
+</code></pre>
+<p>loop &#x5FAA;&#x73AF;&#x4E0D;&#x9700;&#x8981;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#xFF0C;leave &#x4EE3;&#x8868;&#x79BB;&#x5F00;&#x5FAA;&#x73AF;&#x3002;</p>
+<p><strong>&#x67E5;&#x770B;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;:</strong> </p>
+<pre><code class="lang-mysql"># &#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x6240;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;
+SHOW FUNCTION STATUS;
+# &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x6240;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;
+SHOW FUNCTION STATUS WHERE db = db_name;
+# &#x6309;&#x51FD;&#x6570;&#x540D;&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;
+SHOW FUNCTION STATUS LIKE &apos;%date%&apos;;
+# &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x7684;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;
+SHOW CREATE FUNCTION func_name;
+</code></pre>
+<p>&#x6CE8;&#xFF1A;&#x67E5;&#x770B;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x548C;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x8BED;&#x6CD5;&#x5B8C;&#x5168;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5173;&#x952E;&#x5B57;&#x4E0D;&#x540C;&#x3002;</p>
+<h3 id="&#x51FD;&#x6570;&#x548C;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;">&#x51FD;&#x6570;&#x548C;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</h3>
+<p>&#x200B;    &#x51FD;&#x6570;&#xFF08;function&#xFF09;&#x548C;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#xFF08;procedure&#xFF09;&#x5728;&#x529F;&#x80FD;&#x4E0A;&#x6BD4;&#x8F83;&#x76F8;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x5BF9;&#x4E00;&#x7EC4;&#x903B;&#x8F91;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x3002;&#x4F46;&#x4E24;&#x8005;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x533A;&#x522B;&#xFF0C;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x4F7F;&#x7528;return &#x8FDB;&#x884C;&#x8FD4;&#x56DE;&#xFF0C;&#x800C;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E0D;&#x9700;&#x8981;&#xFF1B;&#x4E8C;&#x8005;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E5F;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x51FD;&#x6570;&#x4E00;&#x822C;&#x5C01;&#x88C5;&#x6210;&#x516C;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;SQL&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x6BD4;&#x8F83;&#x65E5;&#x671F;&#x3001;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x7B49;&#xFF1B;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5219;&#x662F;&#x5C01;&#x88C5;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x91CD;&#x7B97;&#xFF0C;&#x5E93;&#x5B58;&#x5F02;&#x5E38;&#x6570;&#x636E;&#x626B;&#x63CF;&#x7B49;&#xFF0C;&#x9700;&#x8981;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x5668;&#x5355;&#x72EC;&#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3. 数据类型（Data Type）.html" class="navigation navigation-prev " aria-label="Previous page: 3. 数据类型（Data Type）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5. 视图（View）.html" class="navigation navigation-next " aria-label="Next page: 5. 视图（View）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. 函数（Function）","level":"1.5","depth":1,"next":{"title":"5. 视图（View）","level":"1.6","depth":1,"path":"target/5. 视图（View）.md","ref":"./target/5. 视图（View）.md","articles":[]},"previous":{"title":"3. 数据类型（Data Type）","level":"1.4","depth":1,"path":"target/3. 数据类型（Data Type）.md","ref":"./target/3. 数据类型（Data Type）.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"target/4. 函数（Function）.md","mtime":"2020-12-20T14:06:23.207Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-22T14:10:08.794Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
